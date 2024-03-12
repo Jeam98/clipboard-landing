@@ -1,0 +1,307 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+:root {
+  --StrongCyan: hsl(171, 66%, 44%);
+  --LightBlue: hsl(233, 100%, 69%);
+  --DarkGrayishBlue: hsl(210, 10%, 33%);
+  --DarkGrayishBlueA: hsla(210, 10%, 33%, 0.1);
+  --GrayishBlue: hsl(201, 11%, 66%);
+}
+* {
+  font-family: "Bai Jamjuree", sans-serif;
+  box-sizing: border-box;
+  user-select: none;
+}
+.container {
+  display: grid;
+  margin: 0.9em;
+  padding: 0.8em;
+  text-align: center;
+  gap: 4em;
+}
+header,
+section,
+footer,
+.tools {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+h1,
+h2,
+h3 {
+  font-weight: 600;
+  color: var(--DarkGrayishBlue);
+}
+h1 {
+  font-size: 33px;
+}
+h2 {
+  font-size: 27px;
+}
+h3 {
+  font-size: 24px;
+}
+p {
+  color: var(--GrayishBlue);
+  font-size: 18px;
+}
+footer {
+  background-color: var(--DarkGrayishBlueA);
+  text-align: center;
+  padding: 2em 0em;
+  font-size: 18px;
+}
+footer p {
+  color: var(--DarkGrayishBlue);
+}
+.devices {
+  width: 100%;
+}
+#logos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4em;
+}
+#computer {
+  display: grid;
+  gap: 2em;
+}
+.download {
+  padding-bottom: 3em;
+}
+.benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+.tools figure {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.tools figure img {
+  width: 15%;
+  margin: auto;
+}
+button {
+  border-radius: 2em;
+  border: none;
+  padding: 1em;
+  font-weight: 600;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
+#btns {
+  display: grid;
+  gap: 1em;
+}
+.btn-1 {
+  background-color: var(--StrongCyan);
+  transition: 0.2s transform;
+}
+.btn-1:active {
+  transform: scale(105%);
+}
+.btn-2 {
+  background-color: var(--LightBlue);
+  transition: 0.2s transform;
+}
+.btn-2:active {
+  transform: scale(105%);
+}
+.directory {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.directory a {
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--DarkGrayishBlue);
+  transition: 0.5s color;
+}
+.directory a:hover {
+  color: var(--StrongCyan);
+}
+ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 1em;
+  font-size: 2em;
+}
+li a {
+  color: var(--DarkGrayishBlue);
+  transition: 0.5s color;
+}
+li a:hover {
+  color: var(--StrongCyan);
+}
+.logo-1 {
+  width: 35%;
+}
+.logo-2 {
+  width: 15%;
+}
+@media (min-width: 800px) {
+  .logo-1 {
+    width: 10%;
+  }
+  #btns {
+    display: flex;
+    justify-content: center;
+  }
+  .sc1,
+  .sc2,
+  .sc3 {
+    max-width: 650px;
+    margin: auto;
+  }
+
+  #computer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  #computer figure {
+    position: relative;
+    right: 5%;
+  }
+
+  .benefits {
+    text-align: left;
+    max-width: 400px;
+  }
+  .comp {
+    width: 100%;
+  }
+  .tools {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .tools figure {
+    max-width: 400px;
+  }
+  #logos {
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 5em 0;
+  }
+
+  .download {
+    width: 650px;
+    margin: auto;
+  }
+  footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .logo-2 {
+    width: 50%;
+  }
+
+  .directory {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 1em;
+    text-align: start;
+  }
+  button {
+    padding: 1em 2em;
+  }
+}
